@@ -7,25 +7,73 @@
     <title>My first Bulma website</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
+	<style>
+		section.custom_a
+		{
+			background-color:rgba(154, 130, 139, 0.77);
+		}
+
+		div.move_up_15pixels
+		{
+			margin-top:-15px;
+		}
+	</style>
   <body>
-    <section class="hero is-medium is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <h1 class="title is-2 is-spaced">
-                Hello Bulma!
-              </h1>
-              <h2 class="subtitle is-4">
-                  Congratulations! You're running the <strong>Bulma start</strong> project.
-                  <br>
-                  It includes everything you need to <strong>build your own website</strong> with Bulma.
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+	  <section class="hero is-dark is-bold hidden-print">
+
+
+  <div class="hero-body has-text-centered-mobile">
+	    <div class="level-right has-text-centered-mobile">
+
+    <div class="container">
+		<section>
+		      <h1 class="title">
+        Prometheus Insights
+      </h1>
+      <h2 class="subtitle title">
+        Driven by Data. Inspired by Intuition.
+      </h2> <p></p>
+
+		</section>
+  </div>
+
+      <nav class="level">
+
+
+
+
+
+
+  <div class="level-right move_up_15pixels">
+
+
+    <div class="level-item">
+      <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://github.com/usf-cs212-spring2019">
+        About
+      </a>
+    </div>
+
+    <div class="level-item">
+      <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://usfca.instructure.com/courses/1582958">
+        Services
+      </a>
+    </div>
+
+
+    <div class="level-item">
+      <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://piazza.com/usfca/spring2019/cs212/home">
+       Connect
+      </a>
+    </div>
+
+
+  </div>
+</nav>
+
+    </div> <!-- end container -->
+  </div> <!-- end hero -->
+</section>
+
     <section class="section">
       <div class="container">
         <div class="columns">
@@ -35,7 +83,66 @@
               <p>
                 The <code>npm</code> dependencies included in <code>package.json</code> are:
               </p>
-              <ul>
+
+
+
+<div class="dropdown">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+      <span>Click me</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item">
+        Overview
+      </a>
+      <a href="#" class="dropdown-item">
+        Modifiers
+      </a>
+      <a href="#" class="dropdown-item">
+        Grid
+      </a>
+      <a href="#" class="dropdown-item">
+        Form
+      </a>
+      <a href="#" class="dropdown-item">
+        Elements
+      </a>
+      <a href="#" class="dropdown-item">
+        Components
+      </a>
+      <a href="#" class="dropdown-item">
+        Layout
+      </a>
+      <hr class="dropdown-divider">
+      <a href="#" class="dropdown-item">
+        More
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="dropdown is-hoverable">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+      <span>Hover me</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+    <div class="dropdown-content">
+      <div class="dropdown-item">
+        <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+      </div>
+    </div>
+  </div>
+</div>     <ul>
                 <li>
                   <code><a href="https://github.com/jgthms/bulma">bulma</a></code>
                 </li>
@@ -191,23 +298,7 @@
     <footer class="footer has-text-centered">
       <div class="container">
          <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <p>
-              <strong class="has-text-weight-semibold">
-                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.3</a>
-              </strong>
-            </p>
-            <p>
-              <small>
-                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-              </small>
-            </p>
-            <p style="margin-top: 1rem;">
-              <a href="http://bulma.io">
-                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-              </a>
-            </p>
-          </div>
+
         </div>
       </div>
     </footer>
