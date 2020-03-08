@@ -1,4 +1,0 @@
-src main
-========
-.. automodule:: src.compare_with_bolsig
-   :members:
