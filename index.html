@@ -24,6 +24,10 @@
 		{
 			margin-top:-15px;
 		}
+		a.no_underline
+		{
+			text-decoration: none;
+		}
 	</style>
   <body>
 	  <section class="hero is-dark is-bold hidden-print">
@@ -54,11 +58,32 @@
   <div class="level-right move_up_15pixels">
 
 
-    <div class="level-item">
-      <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://github.com/usf-cs212-spring2019">
-        About
+<div class="dropdown is-hoverable is-fullwidth is-dark is-inverted is-outlined">
+  <div class="dropdown-trigger is-fullwidth is-dark is-inverted is-outlined">
+    <button class="button is-hoverable is-fullwidth is-dark is-inverted is-outlined" aria-haspopup="true" aria-controls="dropdown-menu4">
+      <span>About</span>
+      <span class="icon is-small is-fullwidth is-dark is-inverted is-outlined">
+        <i class="fas fa-angle-down is-fullwidth is-dark is-inverted is-outlined" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+
+    <div class="dropdown-content">
+		
+      <a class="dropdown-item no_underline" href="https://www.google.com">
+        This is a link
+      </a>
+      <hr class="dropdown-divider">
+      <a class="dropdown-item no_underline" href="https://www.google.com">
+        This is a link
       </a>
     </div>
+	  
+  </div>
+</div> 
+
+	  	  &nbsp; &nbsp; 
 
     <div class="level-item">
       <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://usfca.instructure.com/courses/1582958">
@@ -72,7 +97,6 @@
        Connect
       </a>
     </div>
-<a href="photography/index.html" class="button is-dark is-inverted  is-inverted is-outlined"> <span class="icon is-small"> <i class=""></i> </span> <span>Other test</span> </a>
 
   </div>
 </nav>
