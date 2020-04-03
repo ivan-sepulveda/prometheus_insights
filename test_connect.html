@@ -36,6 +36,9 @@ div.float_to_top {
 h3.float_to_top {
     vertical-align: top;
 }
+	#my_id {
+    display: none;
+}
 </style>
 <body>
 <nav class="navbar is-dark is-bold hidden-print has-text-centered-mobile">
@@ -64,8 +67,10 @@ h3.float_to_top {
 
       <hr>
 		<br>
+		<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 		<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
-          action="https://script.google.com/macros/s/AKfycbx0YJSYrB28eqjSC8L4V3wJlDob-SAdrN56HfUu60xzwYAo5ryg/exec">
+          action="https://script.google.com/macros/s/AKfycbx0YJSYrB28eqjSC8L4V3wJlDob-SAdrN56HfUu60xzwYAo5ryg/exec"
+			  target="dummyframe">
       <div class="columns schedule">
         <div class="column is-one-third"> <img src="images/erica-steeves-G_lwAp0TF38-unsplash.jpg" alt="Image not available."> </div>
         <div class="column is-two-thrids">
@@ -122,10 +127,12 @@ h3.float_to_top {
   <div class="column  is-dark">
 	  
 
-	          <button class="button button-success">Submit
+	          <button class="button button-success" onclick="document.getElementById('my_id').style.display = 'block' ;">Submit
         </button>
+
 	  
     </div>
+	      <div id="my_id"> Thanks! We'll be in touch soon.</div>
 
 				</div>
 			</div>
@@ -135,6 +142,9 @@ h3.float_to_top {
 
 			
       </div>
+			
+			
+
 </form>
       <hr>
     </div>
