@@ -1,0 +1,106 @@
+[{
+  "key": "East Coast Sour Diesel - Sativa",
+  "values": [{
+    "reason": "Dry",
+    "device": "East Coast Sour Diesel - Sativa",
+    "value": 0.32
+  }, {
+    "reason": "Dry",
+    "device": "East Coast Sour Diesel - Sativa",
+    "value": 0.17
+  }, {
+    "reason": "Creative",
+    "device": "East Coast Sour Diesel - Sativa",
+    "value": 0.38
+  }, {
+    "reason": "Happy",
+    "device": "East Coast Sour Diesel - Sativa",
+    "value": 0.6
+  }, {
+    "reason": "Uplifted",
+    "device": "East Coast Sour Diesel - Sativa",
+    "value": 0.5
+  }, {
+    "reason": "Energetic",
+    "device": "East Coast Sour Diesel - Sativa",
+    "value": 0.57
+  }, {
+    "reason": "Euphoric",
+    "device": "East Coast Sour Diesel - Sativa",
+    "value": 0.55
+  }, {
+    "reason": "Fatigue",
+    "device": "East Coast Sour Diesel - Sativa",
+    "value": 0.18
+  }]
+}, {
+  "key": "GMO Cookies - Indica",
+  "values": [{
+    "reason": "Dizzy",
+    "device": "GMO Cookies - Indica",
+    "value": 0.05
+  }, {
+    "reason": "Dry",
+    "device": "GMO Cookies - Indica",
+    "value": 0.13
+  }, {
+    "reason": "Uplifted",
+    "device": "GMO Cookies - Indica",
+    "value": 0.3
+  }, {
+    "reason": "Euphoric",
+    "device": "GMO Cookies - Indica",
+    "value": 0.4
+  }, {
+    "reason": "Insomnia",
+    "device": "GMO Cookies - Indica",
+    "value": 0.15
+  }, {
+    "reason": "Relaxed",
+    "device": "GMO Cookies - Indica",
+    "value": 0.61
+  }, {
+    "reason": "Happy",
+    "device": "GMO Cookies - Indica",
+    "value": 0.41
+  }, {
+    "reason": "Sleepy",
+    "device": "GMO Cookies - Indica",
+    "value": 0.21
+  }]
+}, {
+  "key": "OG Kush - Hybrid",
+  "values": [{
+    "reason": "Dry",
+    "device": "OG Kush - Hybrid",
+    "value": 0.23
+  }, {
+    "reason": "Hungry",
+    "device": "OG Kush - Hybrid",
+    "value": 0.33
+  }, {
+    "reason": "Happy",
+    "device": "OG Kush - Hybrid",
+    "value": 0.59
+  }, {
+    "reason": "Relaxed",
+    "device": "OG Kush - Hybrid",
+    "value": 0.54
+  }, {
+    "reason": "Insomnia",
+    "device": "OG Kush - Hybrid",
+    "value": 0.23
+  }, {
+    "reason": "Euphoric",
+    "device": "OG Kush - Hybrid",
+    "value": 0.54
+  }, {
+    "reason": "Dry",
+    "device": "OG Kush - Hybrid",
+    "value": 0.38
+  }, {
+    "reason": "Uplifted",
+    "device": "OG Kush - Hybrid",
+    "value": 0.4
+  }]
+}]
