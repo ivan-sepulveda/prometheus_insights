@@ -42,6 +42,7 @@ function RadarChart(id, data, options) {
 
 	//Calculate the average value for each area
 	data.forEach(function(d){
+	    console.log("Value: ", d.values);
 		d[value + "Average"] = d3.mean(d.values, function(e){ return e[value] }); 
 	})
 

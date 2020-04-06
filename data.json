@@ -1,106 +1,142 @@
 [{
-  "key": "East Coast Sour Diesel - Sativa",
-  "values": [{
-    "reason": "Dry",
-    "device": "East Coast Sour Diesel - Sativa",
-    "value": 0.32
-  }, {
-    "reason": "Dry",
-    "device": "East Coast Sour Diesel - Sativa",
-    "value": 0.17
-  }, {
-    "reason": "Creative",
-    "device": "East Coast Sour Diesel - Sativa",
-    "value": 0.38
-  }, {
-    "reason": "Happy",
-    "device": "East Coast Sour Diesel - Sativa",
-    "value": 0.6
-  }, {
-    "reason": "Uplifted",
-    "device": "East Coast Sour Diesel - Sativa",
-    "value": 0.5
-  }, {
-    "reason": "Energetic",
-    "device": "East Coast Sour Diesel - Sativa",
-    "value": 0.57
-  }, {
-    "reason": "Euphoric",
-    "device": "East Coast Sour Diesel - Sativa",
-    "value": 0.55
-  }, {
-    "reason": "Fatigue",
-    "device": "East Coast Sour Diesel - Sativa",
-    "value": 0.18
-  }]
-}, {
-  "key": "GMO Cookies - Indica",
+  "key": "NYC Diesel - Hybrid",
   "values": [{
     "reason": "Dizzy",
-    "device": "GMO Cookies - Indica",
-    "value": 0.05
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.06
   }, {
-    "reason": "Dry",
-    "device": "GMO Cookies - Indica",
-    "value": 0.13
+    "reason": "Dry eyes",
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.21
   }, {
-    "reason": "Uplifted",
-    "device": "GMO Cookies - Indica",
-    "value": 0.3
+    "reason": "Dry mouth",
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.32
   }, {
     "reason": "Euphoric",
-    "device": "GMO Cookies - Indica",
-    "value": 0.4
-  }, {
-    "reason": "Insomnia",
-    "device": "GMO Cookies - Indica",
-    "value": 0.15
-  }, {
-    "reason": "Relaxed",
-    "device": "GMO Cookies - Indica",
-    "value": 0.61
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.52
   }, {
     "reason": "Happy",
-    "device": "GMO Cookies - Indica",
-    "value": 0.41
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.6
   }, {
-    "reason": "Sleepy",
-    "device": "GMO Cookies - Indica",
-    "value": 0.21
+    "reason": "Helps with Anxiety",
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.3
+  }, {
+    "reason": "Helps with Depression",
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.27
+  }, {
+    "reason": "Helps with Pain",
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.26
+  }, {
+    "reason": "Helps with Stress",
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.4
+  }, {
+    "reason": "Paranoid",
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.07
+  }, {
+    "reason": "Uplifted",
+    "device": "NYC Diesel - Hybrid",
+    "value": 0.53
+  }]
+}, {
+  "key": "Haze - Sativa",
+  "values": [{
+    "reason": "Dizzy",
+    "device": "Haze - Sativa",
+    "value": 0.12
+  }, {
+    "reason": "Dry eyes",
+    "device": "Haze - Sativa",
+    "value": 0.18
+  }, {
+    "reason": "Dry mouth",
+    "device": "Haze - Sativa",
+    "value": 0.38
+  }, {
+    "reason": "Euphoric",
+    "device": "Haze - Sativa",
+    "value": 0.51
+  }, {
+    "reason": "Happy",
+    "device": "Haze - Sativa",
+    "value": 0.6
+  }, {
+    "reason": "Helps with Anxiety",
+    "device": "Haze - Sativa",
+    "value": 0.26
+  }, {
+    "reason": "Helps with Depression",
+    "device": "Haze - Sativa",
+    "value": 0.25
+  }, {
+    "reason": "Helps with Pain",
+    "device": "Haze - Sativa",
+    "value": 0.25
+  }, {
+    "reason": "Helps with Stress",
+    "device": "Haze - Sativa",
+    "value": 0.39
+  }, {
+    "reason": "Paranoid",
+    "device": "Haze - Sativa",
+    "value": 0.16
+  }, {
+    "reason": "Uplifted",
+    "device": "Haze - Sativa",
+    "value": 0.53
   }]
 }, {
   "key": "OG Kush - Hybrid",
   "values": [{
-    "reason": "Dry",
+    "reason": "Dizzy",
     "device": "OG Kush - Hybrid",
-    "value": 0.23
+    "value": 0.06
   }, {
-    "reason": "Hungry",
+    "reason": "Dry eyes",
     "device": "OG Kush - Hybrid",
-    "value": 0.33
+    "value": 0.19
   }, {
-    "reason": "Happy",
+    "reason": "Dry mouth",
     "device": "OG Kush - Hybrid",
-    "value": 0.59
-  }, {
-    "reason": "Relaxed",
-    "device": "OG Kush - Hybrid",
-    "value": 0.54
-  }, {
-    "reason": "Insomnia",
-    "device": "OG Kush - Hybrid",
-    "value": 0.23
+    "value": 0.27
   }, {
     "reason": "Euphoric",
     "device": "OG Kush - Hybrid",
-    "value": 0.54
+    "value": 0.42
   }, {
-    "reason": "Dry",
+    "reason": "Happy",
+    "device": "OG Kush - Hybrid",
+    "value": 0.46
+  }, {
+    "reason": "Helps with Anxiety",
+    "device": "OG Kush - Hybrid",
+    "value": 0.31
+  }, {
+    "reason": "Helps with Depression",
+    "device": "OG Kush - Hybrid",
+    "value": 0.18
+  }, {
+    "reason": "Helps with Pain",
+    "device": "OG Kush - Hybrid",
+    "value": 0.37
+  }, {
+    "reason": "Helps with Stress",
     "device": "OG Kush - Hybrid",
     "value": 0.38
   }, {
+    "reason": "Paranoid",
+    "device": "OG Kush - Hybrid",
+    "value": 0.05
+  }, {
     "reason": "Uplifted",
     "device": "OG Kush - Hybrid",
-    "value": 0.4
+    "value": 0.32
   }]
 }]
