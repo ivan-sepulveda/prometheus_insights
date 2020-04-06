@@ -5,7 +5,7 @@
 /////////// Inspired by the code of alangrafu ///////////
 /////////////////////////////////////////////////////////
 	
-function RadarChart(id, data, options) {
+function DynamicRadarChart(id, data, options) {
 	var cfg = {
 	 w: 600,				//Width of the circle
 	 h: 600,				//Height of the circle
@@ -86,14 +86,48 @@ function RadarChart(id, data, options) {
 	d3.select(id).select("svg").remove();
 	
 	//Initiate the radar chart SVG
+	//var svg = d3.select(id)
+			//.append("svg")
+			//.attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
+			//.attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
+			//.attr("viewBox", "0 0 1000 1000");
+			//.attr("class", "radar"+id)
+		//	.classed("svg-content-responsive", true)
+
 	var svg = d3.select(id)
 			.append("svg")
-			.attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
-			.attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
-			//.attr("viewBox", "0 0 1000 1000");
+			//.attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
+			//.attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
+			// Responsive SVG needs these 2 attributes and no width and height attr.
+			//.attr("preserveAspectRatio", "xMinYMin meet")
+			.attr("viewBox", "0 0 " + Math.floor((cfg.w)/0.75) + " " + Math.floor(( cfg.h)/0.75))
+			// Class to make it responsive.
 			.attr("class", "radar"+id)
-			.classed("svg-content-responsive", true)
-
+			.classed("svg-content-responsive", true);
+			// Fill with a rectangle for visualization.
+			//.append("rect")
+			//.classed("rect", true)
+			//.attr("width", 600)
+			//.attr("height", 400);
+			//.attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
+			//.attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
+			//.attr("viewBox", "0 0 1000 1000");
+			//.attr("class", "radar"+id)
+			//.classed("svg-content-responsive", true)			//.append("svg2")
+			// Container class to make it responsive.
+			//.classed("svg-container", true) 
+			//.append("svg")
+			// Responsive SVG needs these 2 attributes and no width and height attr.
+			//.attr("preserveAspectRatio", "xMinYMin meet")
+			//.attr("viewBox", "0 0 600 400")
+			// Class to make it responsive.
+			//.classed("svg-content-responsive", true)
+			// Fill with a rectangle for visualization.
+			//.append("rect")
+			//.classed("rect", true)
+			//.attr("width", 600)
+		//	.attr("height", 400);
+		
 			//.append("svg")
 			//.attr("preserveAspectRatio", "xMinYMin meet")
 			//.attr("id", "ababab")
@@ -105,7 +139,6 @@ function RadarChart(id, data, options) {
 	//var el   = document.getElementById("yourElement"); // or other selector like querySelector()
 	//var rect = el.getBoundingClientRect(); // get the bounding rectangle
 
-	console.log("svg.id", svg);
 	//var bBox = svg.getBBox();
 	//Append a g element		
 	var g = svg.append("g")
