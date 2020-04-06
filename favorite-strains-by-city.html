@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<!-- Google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Smoothed D3.js Radar Chart</title>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.3.0/d3-legend.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.3.0/d3-legend.js" charset="utf-8"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +27,7 @@ section.custom_a {
 div.move_up_15pixels {
     margin-top: -15px;
 }
-a.no_underline {
+a.no_underline{
     text-decoration: none;
 }
 a.no_underline_on_hover a:hover {
@@ -41,12 +42,10 @@ div.float_to_top {
 h3.float_to_top {
     vertical-align: top;
 }
-	#my_id {
+#my_id {
     display: none;
 }
 	
-
-
 
 </style>
 <body>
@@ -58,17 +57,51 @@ h3.float_to_top {
     </div>
   </div>
 </nav>
-
 <section class="section">
   <div class="container has-text-centered-mobile">
-    <div class="content">
-		          <h3>Favorite Strains by City</h3>
+    <div class="content has-text-centered">
+				      <h3 align="center">Favorite Strains and Dispensaries by City</h3>
+      <div class="columns has-text-centered is-center">
+		
+        <div class="column is-full"> 
+<div class="control has-icons-left has-text-centered">
+  <div class="select is-small">
+	    <span class="icon is-small is-left">
+    <i class="fas fa-globe"></i>
+  </span>
+    <select id="city" onChange="reload(this.value)">
+      <option value="data_la.json">Los Angeles</option>
+      <option value="data_nyc.json" selected> New York City</option>
+    </select>
+  </div>
+
+</div>
+			
+			
+<div class="control has-icons-left has-text-centered">
+  <div class="select is-small">
+	    <span class="icon is-small is-left">
+    <i class="fas fa-info-circle"></i>
+  </span>
+    <select>
+      <option selected>Strains</option>
+      <option>Dispensaries</option>
+    </select>
+  </div>
+
+</div>
+		  
+</div>
+</div>
+
+
+
 
       <hr>
-		<div class="columns has-text-centered">
-		<div class="column is-full">
-
-		<script>
+      <div class="columns has-text-centered">
+		
+        <div class="column is-full"> 
+          <script>
 			////////////////////////////////////////////////////////////// 
 			//////////////////////// Set-Up ////////////////////////////// 
 			////////////////////////////////////////////////////////////// 
@@ -101,21 +134,14 @@ h3.float_to_top {
 			};
 
 			//Load the data and Call function to draw the Radar chart
-			d3.json("data.json", function(error, data){
-				RadarChart(".radarChart", data, radarChartOptions);
-			});
+			//d3.json("data_nyc.json", function(error, data){
+			//	RadarChart(".radarChart", data, radarChartOptions);
+			//});
 			
 		</script>
-			
-
-		
-		
-
-
-					<div class="dynamicRadarChart" style="max-width: 650px; display: block; margin: auto;" align="center"></div>
-
-				<script src="dynamicRadarChart.js"></script>	
-		<script>
+          <div class="dynamicRadarChart" style="max-width: 650px; display: block; margin: auto;" align="center"></div>
+          <script src="dynamicRadarChart.js"></script> 
+          <script>
 			////////////////////////////////////////////////////////////// 
 			//////////////////////// Set-Up ////////////////////////////// 
 			////////////////////////////////////////////////////////////// 
@@ -147,23 +173,41 @@ h3.float_to_top {
 			  areaName: "device",
 			  value: "value"
 			};
+			
+			var e = document.getElementById("city");
+			var strUser = e.options[e.selectedIndex].value;
+			console.log("value: ", strUser);
 
 			//Load the data and Call function to draw the Radar chart
-			d3.json("data.json", function(error, data){
+			d3.json(strUser, function(error, data){
 				DynamicRadarChart(".dynamicRadarChart", data, dynamicRadarChartOptions);
 			});
+			  
+			  
+			function reload(city_data) {
+		        console.log("value: ", "hello");
+			    d3.json(city_data, function(error, data){
+			    DynamicRadarChart(".dynamicRadarChart", data, dynamicRadarChartOptions);
+			    });
+			}
 			
-		</script>
-			
-			</div>
-		
-		</div>
-					</div>
-		
-		</div>
-
-    <!-- Comment --> 
-    
+		</script> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="columns has-text-centered">
+        <div class="column is-full"> Sources
+			<p>1. https://www.civilized.life/articles/most-popular-marijuana-strains-in-new-york/</p>
+			<p>2. https://www.leafly.com/news/strains-products/top-10-cannabis-strains-in-california/</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comment --> 
 </section>
 <footer class="footer has-text-centered has-text-centered-mobile"> Email us at: <br>
   prometheus.insights@gmail.com </footer>
