@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smoothed D3.js Radar Chart</title>
+<title>Favorite Strains by Major City</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.3.0/d3-legend.js" charset="utf-8"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
@@ -71,25 +71,15 @@ h3.float_to_top {
   </span>
     <select id="city" onChange="reload(this.value)">
       <option value="data_la.json">Los Angeles</option>
-      <option value="data_nyc.json" selected> New York City</option>
+      <option value="data_sf.json" selected> San Francisco Bay Area</option>
+	  <option value="data_nyc.json" selected> New York City</option>
     </select>
   </div>
 
 </div>
 			
 			
-<div class="control has-icons-left has-text-centered">
-  <div class="select is-small">
-	    <span class="icon is-small is-left">
-    <i class="fas fa-info-circle"></i>
-  </span>
-    <select>
-      <option selected>Strains</option>
-      <option>Dispensaries</option>
-    </select>
-  </div>
 
-</div>
 		  
 </div>
 </div>
@@ -196,12 +186,33 @@ h3.float_to_top {
       </div>
     </div>
   </div>
+	
+	  <div class="container">
+    <div class="content">
+      <div class="columns has-text-centered">
+        <div class="column is-full">
+			<h4>Step 1: Building upon Existing Open Source Code</h4>
+			<p>This visual has been built off modified source code from visualcinnamon [5]. At first, the chart only displayed in full on desktop and some tablets, but I was able to modify the source code so that this rechart dynamically resizes based on the device you are browsing on.
+			After some research, I saw that Github's saiskee [6] had already built a script to scrape leafly. However, since then, leafly has restructured their website and the script had to be brought to date.</p>
+			<h4>Step 2: Finding the Data</h4>
+			<p>Unfortunately, neither Leafly nor Weedmaps have publicly available rankings of strain by city. So I just went to the first page of google and took one hybrid, sative, and indica from each of those articles per city.
+			The rest was just an issue of plugging those names into my newly fixed Leafly Web-Scraper, and outputting a new JSON
+			file for each city.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="content">
       <div class="columns has-text-centered">
-        <div class="column is-full"> Sources
-			<p>1. https://www.civilized.life/articles/most-popular-marijuana-strains-in-new-york/</p>
-			<p>2. https://www.leafly.com/news/strains-products/top-10-cannabis-strains-in-california/</p>
+        <div class="column is-full">
+			<h4>Sources</h4>
+			<p>1. https://www.leafly.com/strains/</p>
+			<p>2. https://www.civilized.life/articles/most-popular-marijuana-strains-in-new-york/</p>
+			<p>3. https://www.leafly.com/news/strains-products/top-10-cannabis-strains-in-california/</p>
+			<p>4. https://wheresweed.com/strains/california/bay-area/sativa/best-rated</p>
+			<p>5. https://www.visualcinnamon.com/2015/10/different-look-d3-radar-chart.html</p>
+			<p>6. https://github.com/saiskee/Leafly-scraper</p>
         </div>
       </div>
     </div>
