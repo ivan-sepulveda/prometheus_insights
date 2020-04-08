@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prometheus Insights</title>
+<title>Prometheus Insights - Connect</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +36,7 @@ div.float_to_top {
 h3.float_to_top {
     vertical-align: top;
 }
-	#my_id {
+#my_id {
     display: none;
 }
 </style>
@@ -63,89 +63,73 @@ h3.float_to_top {
 <section class="section">
   <div class="container has-text-centered-mobile">
     <div class="content">
-		          <h3>Let's make the most out of your data.</h3>
-
+      <h3>Let's make the most out of your data.</h3>
       <hr>
-		<br>
-		<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-		<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+      <br>
+      <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
           action="https://script.google.com/macros/s/AKfycbx0YJSYrB28eqjSC8L4V3wJlDob-SAdrN56HfUu60xzwYAo5ryg/exec"
 			  target="dummyframe">
-      <div class="columns schedule">
-        <div class="column is-one-third"> <img src="images/erica-steeves-G_lwAp0TF38-unsplash.jpg" alt="Image not available."> </div>
-        <div class="column is-two-thrids">
-          <div class="columns is-vcentered">
-            <div class="column is-half">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                  <input  id="Name" name="Name"  class="input" type="text" placeholder="Shane Battier">
+        <div class="columns schedule">
+          <div class="column is-one-third"> <img src="images/erica-steeves-G_lwAp0TF38-unsplash.jpg" alt="Image not available."> </div>
+          <div class="column is-two-thrids">
+            <div class="columns is-vcentered">
+              <div class="column is-half">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input  id="Name" name="Name"  class="input" type="text" placeholder="Shane Battier">
+                  </div>
+                </div>
+              </div>
+              <div class="column is-half">
+                <div class="field">
+                  <label class="label">Company</label>
+                  <div class="control">
+                    <input  id="Company" name="Company" class="input" type="text" placeholder="The Battier Take Charge Foundation">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="column is-half">
-              <div class="field">
-                <label class="label">Company</label>
-                <div class="control">
-                  <input  id="Company" name="Company" class="input" type="text" placeholder="The Battier Take Charge Foundation">
+            <div class="columns is-vcentered">
+              <div class="column is-half">
+                <div class="field">
+                  <label class="label">eMail</label>
+                  <div class="control">
+                    <input id="eMail" name="eMail"  value="" class="input" type="text" placeholder="shane@gmail.com">
+                  </div>
                 </div>
+              </div>
+              <div class="column is-half">
+                <div class="field">
+                  <label class="label">Phone</label>
+                  <div class="control">
+                    <input id="Phone" name="Phone" class="input" type="text" placeholder="555-555-5555">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-vcentered">
+              <div class="column is-full">
+                <div class="field">
+                  <label class="label">How can we help?</label>
+                  <div class="control">
+                    <textarea id="Message" name="Message" class="textarea" placeholder="I have tons of data I want to turn into weekly reports!"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-full is-center">
+                <div class="column  is-dark">
+                  <button class="button button-success" onclick="document.getElementById('my_id').style.display = 'block' ;">Submit </button>
+                </div>
+                <div id="my_id"> Thanks! We'll be in touch soon.</div>
               </div>
             </div>
           </div>
-          <div class="columns is-vcentered">
-            <div class="column is-half">
-              <div class="field">
-                <label class="label">eMail</label>
-                <div class="control">
-                  <input id="eMail" name="eMail"  value="" class="input" type="text" placeholder="shane@gmail.com">
-                </div>
-              </div>
-            </div>
-            <div class="column is-half">
-              <div class="field">
-                <label class="label">Phone</label>
-                <div class="control">
-                  <input id="Phone" name="Phone" class="input" type="text" placeholder="555-555-5555">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="columns is-vcentered">
-            <div class="column is-full">
-              <div class="field">
-                <label class="label">How can we help?</label>
-                <div class="control">
-                  <textarea id="Message" name="Message" class="textarea" placeholder="I have tons of data I want to turn into weekly reports!"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-			<div class="columns is-centered has-text-centered">
-			<div class="column is-full is-center">
-
-				
-  <div class="column  is-dark">
-	  
-
-	          <button class="button button-success" onclick="document.getElementById('my_id').style.display = 'block' ;">Submit
-        </button>
-
-	  
-    </div>
-	      <div id="my_id"> Thanks! We'll be in touch soon.</div>
-
-				</div>
-			</div>
-
-
         </div>
-
-			
-      </div>
-			
-			
-
-</form>
+      </form>
       <hr>
     </div>
     
@@ -154,6 +138,6 @@ h3.float_to_top {
   </div>
 </section>
 <footer class="footer has-text-centered has-text-centered-mobile"> Email us at: <br>
-  prometheus.insights@gmail.com </footer>
+  info@prometheusinsights.com </footer>
 </body>
 </html>

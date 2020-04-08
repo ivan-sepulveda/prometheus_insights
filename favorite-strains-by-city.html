@@ -27,7 +27,7 @@ section.custom_a {
 div.move_up_15pixels {
     margin-top: -15px;
 }
-a.no_underline{
+a.no_underline {
     text-decoration: none;
 }
 a.no_underline_on_hover a:hover {
@@ -45,8 +45,6 @@ h3.float_to_top {
 #my_id {
     display: none;
 }
-	
-
 </style>
 <body>
 <nav class="navbar is-dark is-bold hidden-print has-text-centered-mobile">
@@ -60,36 +58,22 @@ h3.float_to_top {
 <section class="section">
   <div class="container has-text-centered-mobile">
     <div class="content has-text-centered">
-				      <h3 align="center">Favorite Strains and Dispensaries by City</h3>
+      <h3 align="center">Favorite Strains and Dispensaries by City</h3>
       <div class="columns has-text-centered is-center">
-		
-        <div class="column is-full"> 
-<div class="control has-icons-left has-text-centered">
-  <div class="select is-small">
-	    <span class="icon is-small is-left">
-    <i class="fas fa-globe"></i>
-  </span>
-    <select id="city" onChange="reload(this.value)">
-      <option value="data_la.json">Los Angeles</option>
-      <option value="data_sf.json" selected> San Francisco Bay Area</option>
-	  <option value="data_nyc.json" selected> New York City</option>
-    </select>
-  </div>
-
-</div>
-			
-			
-
-		  
-</div>
-</div>
-
-
-
-
+        <div class="column is-full">
+          <div class="control has-icons-left has-text-centered">
+            <div class="select is-small"> <span class="icon is-small is-left"> <i class="fas fa-globe"></i> </span>
+              <select id="city" onChange="reload(this.value)">
+                <option value="data/data_la.json">Los Angeles</option>
+                <option value="data/data_sf.json" selected> San Francisco Bay Area</option>
+                <option value="data/data_nyc.json" selected> New York City</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
       <hr>
       <div class="columns has-text-centered">
-		
         <div class="column is-full"> 
           <script>
 			////////////////////////////////////////////////////////////// 
@@ -186,18 +170,17 @@ h3.float_to_top {
       </div>
     </div>
   </div>
-	
-	  <div class="container">
+  <div class="container">
     <div class="content">
       <div class="columns has-text-centered">
         <div class="column is-full">
-			<h4>Step 1: Building upon Existing Open Source Code</h4>
-			<p>This visual has been built off modified source code from visualcinnamon [5]. At first, the chart only displayed in full on desktop and some tablets, but I was able to modify the source code so that this rechart dynamically resizes based on the device you are browsing on.
-			After some research, I saw that Github's saiskee [6] had already built a script to scrape leafly. However, since then, leafly has restructured their website and the script had to be brought to date.</p>
-			<h4>Step 2: Finding the Data</h4>
-			<p>Unfortunately, neither Leafly nor Weedmaps have publicly available rankings of strain by city. So I just went to the first page of google and took one hybrid, sative, and indica from each of those articles per city.
-			The rest was just an issue of plugging those names into my newly fixed Leafly Web-Scraper, and outputting a new JSON
-			file for each city.</p>
+          <h4>Step 1: Building upon Existing Open Source Code</h4>
+          <p>This visual has been built off modified source code from visualcinnamon [5]. At first, the chart only displayed in full on desktop and some tablets, but I was able to modify the source code so that this rechart dynamically resizes based on the device you are browsing on.
+            After some research, I saw that Github's saiskee [6] had already built a script to scrape leafly. However, since then, leafly has restructured their website and the script had to be brought to date.</p>
+          <h4>Step 2: Finding the Data</h4>
+          <p>Unfortunately, neither Leafly nor Weedmaps have publicly available rankings of strain by city. So I just went to the first page of google and took one hybrid, sative, and indica from each of those articles per city.
+            The rest was just an issue of plugging those names into my newly fixed Leafly Web-Scraper, and outputting a new JSON
+            file for each city.</p>
         </div>
       </div>
     </div>
@@ -206,13 +189,13 @@ h3.float_to_top {
     <div class="content">
       <div class="columns has-text-centered">
         <div class="column is-full">
-			<h4>Sources</h4>
-			<p>1. https://www.leafly.com/strains/</p>
-			<p>2. https://www.civilized.life/articles/most-popular-marijuana-strains-in-new-york/</p>
-			<p>3. https://www.leafly.com/news/strains-products/top-10-cannabis-strains-in-california/</p>
-			<p>4. https://wheresweed.com/strains/california/bay-area/sativa/best-rated</p>
-			<p>5. https://www.visualcinnamon.com/2015/10/different-look-d3-radar-chart.html</p>
-			<p>6. https://github.com/saiskee/Leafly-scraper</p>
+          <h4>Sources</h4>
+          <p>1. https://www.leafly.com/strains/</p>
+          <p>2. https://www.civilized.life/articles/most-popular-marijuana-strains-in-new-york/</p>
+          <p>3. https://www.leafly.com/news/strains-products/top-10-cannabis-strains-in-california/</p>
+          <p>4. https://wheresweed.com/strains/california/bay-area/sativa/best-rated</p>
+          <p>5. https://www.visualcinnamon.com/2015/10/different-look-d3-radar-chart.html</p>
+          <p>6. https://github.com/saiskee/Leafly-scraper</p>
         </div>
       </div>
     </div>
@@ -221,6 +204,6 @@ h3.float_to_top {
   <!-- Comment --> 
 </section>
 <footer class="footer has-text-centered has-text-centered-mobile"> Email us at: <br>
-  prometheus.insights@gmail.com </footer>
+  info@prometheusinsights.com</footer>
 </body>
 </html>
